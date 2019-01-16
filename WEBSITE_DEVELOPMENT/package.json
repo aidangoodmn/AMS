@@ -1,0 +1,15 @@
+{
+  "name": "amspackage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "NODEJS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aidan Goodman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "video.js": "^7.4.1"
+  }
+}
