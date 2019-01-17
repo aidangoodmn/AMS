@@ -10,6 +10,10 @@ const app = express();
 
 app.use(express.static('public'));
 
+app.get('/', function (req,res){
+    res.sendFile(__dirname + 'public/style.CSS');
+});
+
 fs.readFile('hub.html', (err, html) => {
     if(err){
         throw err;
