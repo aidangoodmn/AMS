@@ -9,9 +9,10 @@
   "author": "Aidan Goodman",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
-    "video.js": "^7.4.1",
     "body-parser": "*",
-    "ejs": "*"
+    "ejs": "*",
+    "express": "^4.16.4",
+    "node-sass": "^4.11.0",
+    "video.js": "^7.4.1"
   }
 }
