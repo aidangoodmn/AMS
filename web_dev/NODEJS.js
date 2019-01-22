@@ -1,6 +1,5 @@
 const port = 3000;
 
-const videojs = require('video.js');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -17,8 +16,6 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.get('/', function(req, res){
     res.render('index');
 })
-
-let toggleMENUstatus = false;
 
 app.listen(3000, function(){
     console.log('Server started on port 3000');
