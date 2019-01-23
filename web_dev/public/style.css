@@ -127,8 +127,8 @@ button{
     transition: none;
 }
 .video-js:hover .vjs-big-play-button {
-  background-color: #888888;
-  background-color: #888888;
+  background-color: #e6e6e6;
+  background-color: #e6e6e6;
   border: 1px solid black;
 }
 
@@ -139,8 +139,8 @@ background-color: white;
 }
 
 .video-js .vjs-slider {
-background-color: #888888;
-background-color: #888888;
+background-color: #e6e6e6;
+background-color: #e6e6e6;
 }
 
 .video-js .vjs-volume-level,
@@ -150,13 +150,13 @@ background: black;
 }
 
 .video-js .vjs-load-progress {
-background: #888888;
-background: #888888;
+background: #e6e6e6;
+background: #e6e6e6;
 }
 
 .video-js .vjs-load-progress div {
-background: #888888;
-background: #888888;
+background: #e6e6e6;
+background: #e6e6e6;
 }
 
 .vjs-poster{
@@ -221,7 +221,7 @@ background: #888888;
         }
 
         .MENU_ICON button:hover{
-            background-color: #888888;
+            background-color: #e6e6e6;
         }
 
             .MENU_CONTENT {
@@ -753,7 +753,7 @@ background: #888888;
         }
 
             .HELP_ICON a:hover{
-                background-color: #888888;
+                background-color: #e6e6e6;
                 cursor: pointer;
             }
             .HELP_ICON a:active{
@@ -854,7 +854,7 @@ background: #888888;
     border-color: black;
     border-width: 1px;
     border-top-style: solid;
-    background-color: #888888;
+    background-color: #e6e6e6;
 }
 
     .FOOTER_INFORMATION{
@@ -1083,12 +1083,12 @@ background: #888888;
                                             }
                                                 .EMAIL_SUB button:hover{
                                                     text-decoration: underline;
-                                                    background-color: #888888;
+                                                    background-color: #e6e6e6;
                                                     cursor: pointer;
                                                 }
                                                 .EMAIL_SUB button:active{
                                                     text-decoration: underline;
-                                                    background-color: #888888;
+                                                    background-color: #e6e6e6;
                                                     cursor: pointer;
                                                 }
 
@@ -1207,7 +1207,7 @@ background: #888888;
             border-width: 1px;
             border-top-style: solid;
             border-bottom-style: solid;
-            background-color: #888888;
+            background-color: #e6e6e6;
         }
             .COPYRIGHT a{
                 display: flex;
@@ -1239,7 +1239,7 @@ background: #888888;
             border-top-style: solid;
             border-bottom-style: solid;
             text-decoration: none;
-            background-color: #888888;
+            background-color: #e6e6e6;
         }
             .PRIVACY_POLICY a{
                 display: flex;
@@ -1271,7 +1271,7 @@ background: #888888;
             border-top-style: solid;
             border-bottom-style: solid;
             text-decoration: none;
-            background-color: #888888;
+            background-color: #e6e6e6;
         }
             .TERMS_OF_USE a{
                 display: flex;
@@ -1303,7 +1303,7 @@ background: #888888;
             border-top-style: solid;
             border-bottom-style: solid;
             text-decoration: none;
-            background-color: #888888;
+            background-color: #e6e6e6;
         }
             .USER_AGREEMENT a{
                 display: flex;
@@ -1335,7 +1335,7 @@ background: #888888;
             border-top-style: solid;
             border-bottom-style: solid;
             text-decoration: none;
-            background-color: #888888;
+            background-color: #e6e6e6;
         }
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 
