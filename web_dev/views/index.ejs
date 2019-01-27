@@ -45,7 +45,21 @@
 </div>   
 <!-- MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT -->      
 <!-- NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION -->
-<script src="JAVASCRIPT.js"></script>
+<script >
+let toggleMENUstatus = false;
+    function toggleMENU() {
+    if (toggleMENUstatus === false) {
+        document.getElementById("MENU_CONTENT").style.width = "33.3333%";
+        document.getElementById("MENU_CONTENT").style.borderRightStyle = "solid";
+        toggleMENUstatus = true;
+    }
+    else if (toggleMENUstatus === true){
+        document.getElementById("MENU_CONTENT").style.width = "0px";
+        document.getElementById("MENU_CONTENT").style.borderRightStyle = "none";
+        toggleMENUstatus = false;
+    }
+}
+</script>
 
 <div id="MENU_CONTENT" class="MENU_CONTENT">
     <a class="MENU_CONTENT_DIVIDER"></a>
