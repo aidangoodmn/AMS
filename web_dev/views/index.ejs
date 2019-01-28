@@ -47,16 +47,19 @@
 <!-- NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION -->
 <script >
 let toggleMENUstatus = false;
+
     function toggleMENU() {
     if (toggleMENUstatus === false) {
         document.getElementById("MENU_CONTENT").style.width = "33.3333%";
         document.getElementById("MENU_CONTENT").style.borderRightStyle = "solid";
         toggleMENUstatus = true;
+        document.getElementById("MENU_ICON_CHAR").innerHTML = '|';
     }
     else if (toggleMENUstatus === true){
         document.getElementById("MENU_CONTENT").style.width = "0px";
         document.getElementById("MENU_CONTENT").style.borderRightStyle = "none";
         toggleMENUstatus = false;
+        document.getElementById("MENU_ICON_CHAR").innerHTML = '=';
     }
 }
 
@@ -106,7 +109,7 @@ let toggleMENUstatus = false;
     <div class="NAV_BOX_LEFT">
         <div class="MENU">
             <div class="MENU_ICON">
-                <button onclick="toggleMENU()" > = </button>
+                <button id=MENU_ICON_CHAR onclick="toggleMENU()"  >=</button>
             </div>
         </div>
         <div class="TITLE">
@@ -279,9 +282,9 @@ let toggleMENUstatus = false;
             <div class="FOOTER_CONNECT_CONTENT_RIGHT">
                 <ul>
                     <li>
-                        <a href="THE_CONGREGATION.html"> 
+                        <a href="FORUM.html"> 
                             <span>
-                                THE CONGREGATION
+                                FORUM
                             </span> 
                         </a>
                     </li>
@@ -296,13 +299,6 @@ let toggleMENUstatus = false;
                         <a href=" TWITTER.html"> 
                             <span>
                                 TWITTER
-                            </span> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href=" SNAPCHAT.html"> 
-                            <span>
-                                SNAPCHAT
                             </span> 
                         </a>
                     </li>
