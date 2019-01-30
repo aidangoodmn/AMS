@@ -46,22 +46,30 @@
 <!-- MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT -->      
 <!-- NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION -->
 <script >
-let toggleMENUstatus = false;
+let TOGGLE_MENU_STATUS = false;
 
-    function toggleMENU() {
-    if (toggleMENUstatus === false) {
+    function TOGGLE_MENU() {
+    if (TOGGLE_MENU_STATUS === false) {
         document.getElementById("MENU_CONTENT").style.width = "33.3333%";
         document.getElementById("MENU_CONTENT").style.borderRightStyle = "solid";
-        toggleMENUstatus = true;
+        TOGGLE_MENU_STATUS = true;
         document.getElementById("MENU_ICON_CHAR").innerHTML = '|';
     }
-    else if (toggleMENUstatus === true){
+    else if (TOGGLE_MENU_STATUS  === true){
         document.getElementById("MENU_CONTENT").style.width = "0px";
         document.getElementById("MENU_CONTENT").style.borderRightStyle = "none";
-        toggleMENUstatus = false;
+        TOGGLE_MENU_STATUS  = false;
         document.getElementById("MENU_ICON_CHAR").innerHTML = '=';
     }
 }
+
+let TOGGLE_SEARCH_STATUS = false;
+    function TOGGLE_SEARCH(){
+        if (TOGGLE_SEARCH_STATUS === false) {
+
+        }
+    }
+
 </script>
 
 <div id="MENU_CONTENT" class="MENU_CONTENT">
@@ -89,7 +97,7 @@ let toggleMENUstatus = false;
     <div class="NAV_BOX_LEFT">
         <div class="MENU">
             <div class="MENU_ICON">
-                <button id=MENU_ICON_CHAR onclick="toggleMENU()"  >=</button>
+                <button id=MENU_ICON_CHAR onclick="TOGGLE_MENU()"  >=</button>
             </div>
         </div>
         <div class="TITLE">
@@ -102,7 +110,10 @@ let toggleMENUstatus = false;
     </div>
     <div class="NAV_BOX_MIDDLE">
         <div class="SEARCH_BAR">
-            <input type="text" placeholder="SEARCH">
+            <input type="text" placeholder="SEARCH"></input>
+                <div class="SEARCH_BAR_EXPAND">
+
+                </div>
         </div>
     </div>
     <div class="NAV_BOX_RIGHT">
@@ -132,13 +143,27 @@ let toggleMENUstatus = false;
                 </a>
             </div>
             <div class="NAV_BOX_BOTTOM_RIGHT">
-                <div class="SOCIAL">
-                    YT FB TW IG LI SC 
+                <div class="SOCIAL_GRID">
+                            <a class="SOCIAL_GRID_ITEMS" href="https://www.youtube.com/channel/UCZelTD19DL6RujiOVlqN5dw">
+                                YT
+                            </a>
+                            <a class="SOCIAL_GRID_ITEMS" href="https://www.instagram.com/alternativemediasystems/">
+                                IG
+                            </a>
+                            <a class="SOCIAL_GRID_ITEMS" href="https://www.facebook.com/AltMediaSystems/">
+                                FB
+                            </a>
+                            <a class="SOCIAL_GRID_ITEMS" href="https://twitter.com/AltMediaSystems">
+                                TW
+                            </a>
+                            <a class="SOCIAL_GRID_ITEMS" href="https://www.linkedin.com/company/alternative-media-systems/about/">
+                                LI
+                            </a>
                 </div>
             </div>
             <div class="NAV_BOX_BOTTOM_LEFT">
                 <a class="CURRENT_VIEWING">
-                    VIEWING - MS_000
+                    VIEWING - MS_001
                 </a>
             </div>
         </div>

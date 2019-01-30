@@ -11,6 +11,7 @@ ul {
     padding: 0;
 }
 
+
 a:link {
     color:black;
 }
@@ -126,7 +127,6 @@ button{
 }
 .video-js:hover .vjs-big-play-button {
   background-color: #e6e6e6;
-  background-color: #e6e6e6;
   border: 1px solid black;
 }
 
@@ -165,7 +165,7 @@ background: #e6e6e6;
 /* NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION */
 .GRID_NAV{
     display: grid;
-    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    grid-template-columns: 33.333333% 33.333333% 33.333333%;
     grid-template-rows: 36px 36px;
     height: 36px;
     position: fixed;
@@ -546,6 +546,15 @@ background: #e6e6e6;
             border: 0px solid white;
             outline: none;
         }
+            .SEARCH_BAR_EXPAND{
+                z-index: 2;
+                height: calc(1px + 50vh);
+                width:  100%;
+                border-color: black;
+                background-color: white;
+                border-width: 1px;
+                border-style: solid;
+            }
 
 .NAV_BOX_RIGHT{
     display: flex;
@@ -627,6 +636,7 @@ background: #e6e6e6;
     border-color: black;
     background-color: white;
     border-bottom-style: solid;
+    z-index: -1;
     border-width: 1px;
     width: 100%;
     height: 100%;
@@ -657,20 +667,28 @@ background: #e6e6e6;
         left: calc(100% - 160px);
         background-color: white; 
     }
-        .SOCIAL{
+        .SOCIAL_GRID{
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
-            font: normal 12px 'Courier New', Courier, monospace;
-            padding-left: 16px;
-            padding-right: 16px;
             border-color: black;
             border-width: 1px;
             border-left-style: solid;
-            width: 160px;
-            height: 35px;
-    
+            font: normal 12px 'Courier New', Courier, monospace;
+            padding-left: 16px;
+            padding-right: 16px;
+            width: 100%;
+            height: 100%;
         }
+        
+            .SOCIAL_GRID_ITEMS{
+                padding: 6px;
+                text-decoration: none;
+            }
+
+                .SOCIAL_GRID_ITEMS:hover{
+                    text-decoration: underline;
+                }
 
     .NAV_BOX_BOTTOM_LEFT{
         display: grid;
@@ -1193,7 +1211,7 @@ background: #e6e6e6;
 /* MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT */ 
 .MAIN_GRID{
     display: grid;
-    grid-template-columns: 33.3333% 16.6666% 16.6666% 33.3333%;
+    grid-template-columns: 33.3333333% 16.666666% 16.666666% 33.333333%;
     grid-template-rows: 1fr 1fr;
     height: calc(100vh - 72px);
     margin-top: 72px;
@@ -1381,8 +1399,8 @@ background: #e6e6e6;
 
 .DIRECTORY_GRID{
     display: grid;
-    grid-template-columns:  33.3333% 33.3333% 33.3333%;
-    grid-template-rows: 33.3333% 33.3333% 33.3333%;
+    grid-template-columns:  33.333333% 33.333333% 33.333333%;
+    grid-template-rows: 33.333333% 33.333333% 33.333333%;
     height: calc(100vh - 72px);
     margin-top: 72px;
     width: 100%;
