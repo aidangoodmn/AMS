@@ -64,9 +64,17 @@ let TOGGLE_MENU_STATUS = false;
 }
 
 let TOGGLE_SEARCH_STATUS = false;
+
     function TOGGLE_SEARCH(){
         if (TOGGLE_SEARCH_STATUS === false) {
-
+            document.getElementById("SEARCH_BAR_EXPAND").style.height = "calc(1px + 50vh)";
+            document.getElementById("SEARCH_BAR_EXPAND").style.borderStyle = "solid";
+            TOGGLE_SEARCH_STATUS = true;
+        }
+        else if (TOGGLE_MENU_STATUS  === true){
+            document.getElementById("SEARCH_BAR_EXPAND").style.height= "0px";
+            document.getElementById("SEARCH_BAR_EXPAND").style.borderStyle = "none";
+            TOGGLE_MENU_STATUS  = false;
         }
     }
 
@@ -93,6 +101,9 @@ let TOGGLE_SEARCH_STATUS = false;
     <a class="MENU_CONTENT_USER_AGREEMENT" href="USER_AGREEMENT">USER AGREEMENT</a>
 </div>
 
+<div id="SEARCH_BAR_EXPAND" class="SEARCH_BAR_EXPAND">
+</div>
+
 <div class="GRID_NAV">
     <div class="NAV_BOX_LEFT">
         <div class="MENU">
@@ -110,10 +121,10 @@ let TOGGLE_SEARCH_STATUS = false;
     </div>
     <div class="NAV_BOX_MIDDLE">
         <div class="SEARCH_BAR">
-            <input type="text" placeholder="SEARCH"></input>
-                <div class="SEARCH_BAR_EXPAND">
-
-                </div>
+            <input type="text" placeholder="SEARCH" onclick="TOGGLE_SEARCH()" type="button">
+            <div id="SEARCH_BAR_EXPAND_CANCEL" class="SEARCH_BAR_EXPAND_CANCEL">
+                    <button>X</button>
+            </div>
         </div>
     </div>
     <div class="NAV_BOX_RIGHT">
