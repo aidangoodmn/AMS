@@ -227,12 +227,13 @@ background: #e6e6e6;
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: 35px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px ;
+                visibility: hidden;
                 height: 100%; 
-                width: 0;
+                width: 33.3333%;
                 position: fixed; 
                 margin-top: 36px;
                 border: 1px black;
-                border-right-style: none;
+                border-right-style: solid;
                 z-index: 1; 
                 top: 0; 
                 left: 0;
@@ -340,7 +341,6 @@ background: #e6e6e6;
                     .MENU_CONTENT_USER_AUTH:hover{
                         background-color: #e6e6e6;
                     }
-
 
                     .MENU_CONTENT_HELP{
                         border: 1px black;
@@ -549,23 +549,131 @@ background: #e6e6e6;
         }
 
             .SEARCH_BAR_EXPAND{
+                visibility: hidden;
                 position: fixed;
                 margin-top: calc(35px - 100vh);
                 margin-left: calc(33.3333% - 1px);
                 z-index: 2;
-                height: 0px;
+                height: calc(1px + 50vh);
                 width:  calc(33.3333% + 1px);
                 border-color: black;
                 background-color: white;
                 border-width: 1px;
-                border-style: none;
+                border-style: solid;
             }
+
+                .SEARCH_BAR_EXPAND_CONTENT{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 36px 36px 36px 36px 36px 36px 36px 36px 36px;
+                }
+
+                .SEARCH_BAR_EXPAND_CONTENT_MS_001{
+                display:flex;
+                font: normal 12px 'Courier New', Courier, monospace;
+                border-color: black;
+                background-color: white;
+                border-width: 1px;
+                border-bottom-style: solid;   
+                align-items: center;
+                padding: 16px;
+                }
+
+                .SEARCH_BAR_EXPAND_CONTENT_MS_002{
+                    display:flex;
+                    font: normal 12px 'Courier New', Courier, monospace;
+                    border-color: black;
+                    background-color: white;
+                    border-width: 1px;
+                    border-bottom-style: solid;   
+                    align-items: center;
+                    padding: 16px;
+                    }
+
+                    .SEARCH_BAR_EXPAND_CONTENT_MS_003{
+                        display:flex;
+                        font: normal 12px 'Courier New', Courier, monospace;
+                        border-color: black;
+                        background-color: white;
+                        border-width: 1px;
+                        border-bottom-style: solid;   
+                        align-items: center;
+                        padding: 16px;
+                        }
+
+                        .SEARCH_BAR_EXPAND_CONTENT_MS_004{
+                            display:flex;
+                            font: normal 12px 'Courier New', Courier, monospace;
+                            border-color: black;
+                            background-color: white;
+                            border-width: 1px;
+                            border-bottom-style: solid;   
+                            align-items: center;
+                            padding: 16px;
+                            }
+
+                            .SEARCH_BAR_EXPAND_CONTENT_MS_005{
+                                display:flex;
+                                font: normal 12px 'Courier New', Courier, monospace;
+                                border-color: black;
+                                background-color: white;
+                                border-width: 1px;
+                                border-bottom-style: solid;   
+                                align-items: center;
+                                padding: 16px;
+                                }
+
+                                .SEARCH_BAR_EXPAND_CONTENT_MS_006{
+                                    display:flex;
+                                    font: normal 12px 'Courier New', Courier, monospace;
+                                    border-color: black;
+                                    background-color: white;
+                                    border-width: 1px;
+                                    border-bottom-style: solid;   
+                                    align-items: center;
+                                    padding: 16px;
+                                    }
+
+                                    .SEARCH_BAR_EXPAND_CONTENT_MS_007{
+                                        display:flex;
+                                        font: normal 12px 'Courier New', Courier, monospace;
+                                        border-color: black;
+                                        background-color: white;
+                                        border-width: 1px;
+                                        border-bottom-style: solid;   
+                                        align-items: center;
+                                        padding: 16px;
+                                        }
+
+                                        .SEARCH_BAR_EXPAND_CONTENT_MS_008{
+                                            display:flex;
+                                            font: normal 12px 'Courier New', Courier, monospace;
+                                            border-color: black;
+                                            background-color: white;
+                                            border-width: 1px;
+                                            border-bottom-style: solid;   
+                                            align-items: center;
+                                            padding: 16px;
+                                            }
+
+                                            .SEARCH_BAR_EXPAND_CONTENT_MS_009{
+                                                display:flex;
+                                                font: normal 12px 'Courier New', Courier, monospace;
+                                                border-color: black;
+                                                background-color: white;
+                                                border-width: 1px;
+                                                border-bottom-style: solid;   
+                                                align-items: center;
+                                                padding: 16px;
+                                                }
                 
                 .SEARCH_BAR_EXPAND_CANCEL{
                     padding: 8px;
                     visibility: hidden;
                     align-content: center;
                     justify-content: center;
+                    justify-items: center;
+                    align-items: center;
                     font: normal 12px 'Courier New', Courier, monospace;
                 }
 
@@ -618,6 +726,21 @@ background: #e6e6e6;
                 color: black;
             }
 
+            .LOGIN_EXPAND{
+                visibility: hidden;
+                display: flex;
+                position: fixed;
+                margin-top: calc(35px - 100vh);
+                margin-left: calc(66.6666% - 1px);
+                z-index: 2;
+                height: calc(1px + 50vh);
+                width:  calc(33.3333% + 1px);
+                border-color: black;
+                background-color: white;
+                border-width: 1px;
+                border-style: solid;
+                border-right-style: none;
+            }
 .HELP{
     display: flex;
     align-items: center;
@@ -633,6 +756,9 @@ background: #e6e6e6;
         color:black;
         font: normal 12px 'Courier New', Courier, monospace;
         width: 36px;
+        border-color: black;
+        border-width: 1px;
+        border-left-style: solid;
         height: 100%;
     }
 

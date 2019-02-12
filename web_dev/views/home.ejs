@@ -24,7 +24,7 @@
     <div class=HUB_DIRECTORY>
         <div class="HUB_DIRECTORY_CONTENT">
             <a href="DIRECTORY.HTML">
-                MEDIA SYSTEM DIRECTORY
+                DISCOVER MORE CONTENT
             </a>
         </div>
     </div>
@@ -47,35 +47,44 @@
 <!-- NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION NAVAGATION -->
 <script >
 let TOGGLE_MENU_STATUS = false;
-
     function TOGGLE_MENU() {
     if (TOGGLE_MENU_STATUS === false) {
-        document.getElementById("MENU_CONTENT").style.width = "33.3333%";
-        document.getElementById("MENU_CONTENT").style.borderRightStyle = "solid";
-        TOGGLE_MENU_STATUS = true;
+        document.getElementById("MENU_CONTENT").style.visibility = "visible";
         document.getElementById("MENU_ICON_CHAR").innerHTML = '|';
+        TOGGLE_MENU_STATUS = true;
     }
     else if (TOGGLE_MENU_STATUS  === true){
-        document.getElementById("MENU_CONTENT").style.width = "0px";
-        document.getElementById("MENU_CONTENT").style.borderRightStyle = "none";
-        TOGGLE_MENU_STATUS  = false;
+        document.getElementById("MENU_CONTENT").style.visibility = "hidden";
         document.getElementById("MENU_ICON_CHAR").innerHTML = '=';
+        TOGGLE_MENU_STATUS  = false;
     }
 }
 
 let TOGGLE_SEARCH_STATUS = false;
-
     function TOGGLE_SEARCH(){
         if (TOGGLE_SEARCH_STATUS === false) {
-            document.getElementById("SEARCH_BAR_EXPAND").style.height = "calc(1px + 50vh)";
-            document.getElementById("SEARCH_BAR_EXPAND").style.borderStyle = "solid";
-            document.getElementById("SEARCH_BAR_EXPAND_CANCEL").visibility = "visible";
+            document.getElementById("SEARCH_BAR_EXPAND").style.visibility = "visible"
+            document.getElementById("SEARCH_BAR_EXPAND_CANCEL").style.visibility = "visible";
             TOGGLE_SEARCH_STATUS = true;
+    }
+}
+    function TOGGLE_SEARCH_CANCEL(){
+        if (TOGGLE_SEARCH_STATUS === true) {
+            document.getElementById("SEARCH_BAR_EXPAND").style.visibility = "hidden"
+            document.getElementById("SEARCH_BAR_EXPAND_CANCEL").style.visibility = "hidden";
+            TOGGLE_SEARCH_STATUS  = false;
+    }
+}
+
+let TOGGLE_LOGIN_STATUS = false;
+    function TOGGLE_LOGIN(){
+        if (TOGGLE_LOGIN_STATUS === false) {
+            document.getElementById("LOGIN_EXPAND").style.visibility = "visible";
+            TOGGLE_LOGIN_STATUS = true;
         }
-        else if (TOGGLE_MENU_STATUS  === true){
-            document.getElementById("SEARCH_BAR_EXPAND").style.height= "0px";
-            document.getElementById("SEARCH_BAR_EXPAND").style.borderStyle = "none";
-            TOGGLE_MENU_STATUS  = false;
+        else if (TOGGLE_LOGIN_STATUS  === true){
+            document.getElementById("LOGIN_EXPAND").style.visibility= "hidden";
+            TOGGLE_LOGIN_STATUS  = false;
         }
     }
 
@@ -103,10 +112,24 @@ let TOGGLE_SEARCH_STATUS = false;
 </div>
 
 <div id="SEARCH_BAR_EXPAND" class="SEARCH_BAR_EXPAND">
+    <div class="SEARCH_BAR_EXPAND_CONTENT">
+        <a class="SEARCH_BAR_EXPAND_CONTENT_MS_001" href="#"> MEDIA SYSTEM 1</a>
+        <a class="SEARCH_BAR_EXPAND_CONTENT_MS_002" href="#"> MEDIA SYSTEM 2</a>
+        <a class="SEARCH_BAR_EXPAND_CONTENT_MS_003" href="#"> MEDIA SYSTEM 3</a>
+        <a class="SEARCH_BAR_EXPAND_CONTENT_MS_004" href="#"> MEDIA SYSTEM 4</a>
+        <a class="SEARCH_BAR_EXPAND_CONTENT_MS_005" href="#"> MEDIA SYSTEM 5</a>
+        <a class="SEARCH_BAR_EXPAND_CONTENT_MS_006" href="#"> MEDIA SYSTEM 6</a>
+        <a class="SEARCH_BAR_EXPAND_CONTENT_MS_007" href="#"> MEDIA SYSTEM 7</a>
+        <a class="SEARCH_BAR_EXPAND_CONTENT_MS_008" href="#"> MEDIA SYSTEM 8</a>
+        <a class="SEARCH_BAR_EXPAND_CONTENT_MS_009" href="#"> MEDIA SYSTEM 9</a>
+
+    </div>
 </div>
 
 <div id="LOGIN_EXPAND" class="LOGIN_EXPAND">
+    <div class="LOGIN_EXPAND_GRID">
 
+    </div>
 </div>
 
 <div class="GRID_NAV">
@@ -129,16 +152,19 @@ let TOGGLE_SEARCH_STATUS = false;
             <input type="text" placeholder="SEARCH" onclick="TOGGLE_SEARCH()" type="button">
         </div>
         <div id="SEARCH_BAR_EXPAND_CANCEL" class="SEARCH_BAR_EXPAND_CANCEL">
-                <button>X</button>
+                <button onclick="TOGGLE_SEARCH_CANCEL()">X</button>
         </div>
     </div>
     <div class="NAV_BOX_RIGHT">
         <div class = "LOGIN">
-            <a href="LOGIN.html"> 
+            <a onclick="TOGGLE_LOGIN()"> 
                 <span>
                     LOGIN
                 </span> 
             </a>
+        </div>
+        <div id="LOGIN_EXPAND" class="LOGIN_EXPAND">
+
         </div>
         <div class="HELP">
             <div class="HELP_ICON">
